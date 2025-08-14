@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{ae663b83-190e-4e5d-9fd2-6fd3da743cb4}</ProjectGuid>
+    <RootNamespace>ChrisEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\include;C:\Users\acome\OneDrive\Documentos\Unreal Projects\ChrisEngine-2\ThirdParties\imgui-sfml-master;C:\Users\acome\OneDrive\Documentos\Unreal Projects\ChrisEngine-2\ThirdParties\SFML-3.0.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\acome\OneDrive\Documentos\Unreal Projects\ChrisEngine-2\ThirdParties\SFML-3.0.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>$(SolutionDir)/lib/$(PlatformTarget)/$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Downloads\ChrisEngineHeaders\A_Racer.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\ChrisEngineHeaders\BaseApp.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\ChrisEngineHeaders\CShape.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\ChrisEngineHeaders\ECS\Actor.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\ChrisEngineHeaders\ECS\Component.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\ChrisEngineHeaders\ECS\CVector2.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\ChrisEngineHeaders\ECS\Entity.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\ChrisEngineHeaders\ECS\Texture.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\ChrisEngineHeaders\ECS\Transform.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\ChrisEngineHeaders\EngineGUI.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\ChrisEngineHeaders\Prerequisites.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\ChrisEngineHeaders\ResourceManager.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\ChrisEngineHeaders\Window.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\TSharedPointer.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\TStaticPtr.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\TUniquePtr.h" />
+    <ClInclude Include="..\..\..\..\..\Downloads\TWeakPointer.h" />
+    <ClInclude Include="..\ThirdParties\imgui-master\imconfig.h" />
+    <ClInclude Include="..\ThirdParties\imgui-master\imgui.h" />
+    <ClInclude Include="..\ThirdParties\imgui-master\imgui_internal.h" />
+    <ClInclude Include="..\ThirdParties\imgui-master\imstb_rectpack.h" />
+    <ClInclude Include="..\ThirdParties\imgui-master\imstb_textedit.h" />
+    <ClInclude Include="..\ThirdParties\imgui-master\imstb_truetype.h" />
+    <ClInclude Include="..\ThirdParties\imgui-sfml-master\imconfig-SFML.h" />
+    <ClInclude Include="..\ThirdParties\imgui-sfml-master\imgui-SFML.h" />
+    <ClInclude Include="..\ThirdParties\imgui-sfml-master\imgui-SFML_export.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ThirdParties\imgui-master\imgui.cpp" />
+    <ClCompile Include="..\ThirdParties\imgui-master\imgui_demo.cpp" />
+    <ClCompile Include="..\ThirdParties\imgui-master\imgui_draw.cpp" />
+    <ClCompile Include="..\ThirdParties\imgui-master\imgui_tables.cpp" />
+    <ClCompile Include="..\ThirdParties\imgui-master\imgui_widgets.cpp" />
+    <ClCompile Include="..\ThirdParties\imgui-sfml-master\imgui-SFML.cpp" />
+    <ClCompile Include="Actor.cpp" />
+    <ClCompile Include="src\A_Racer.cpp" />
+    <ClCompile Include="src\BaseApp.cpp" />
+    <ClCompile Include="src\CShape.cpp" />
+    <ClCompile Include="src\EngineGUI.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\ResourceManager.cpp" />
+    <ClCompile Include="src\Texture.cpp" />
+    <ClCompile Include="src\Window.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
